@@ -1,2 +1,3 @@
 # CV
-resume using react
+a resume templete made using  react 
+
