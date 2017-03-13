@@ -11,11 +11,11 @@ module.exports = {
   },
   module: {
     preLoaders: [{
-        test: /\.js$/, loader: "eslint-loader", exclude: /node_modules|src\/lib/ }
+        test: /\.jsx?$/, loader: "eslint-loader", exclude: /node_modules|src\/lib/ }
     ],
     loaders: [{
-        test: /\.js$/,
-        loaders: ['react-hot', 'babel?presets[]=react&presets[]=es2015'],
+        test: /\.jsx?$/,
+        loaders: ['react-hot', 'babel'],
         include: [path.join(__dirname, 'src')]
     }, {
         test: /\.scss$/,
@@ -32,21 +32,19 @@ module.exports = {
     },{
         test: /\.(woff|woff2|ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url?limit=10000&name=fonts/[hash:8].[name].[ext]'}]
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx', 'json']
-  },
-  eslint: {
-    configFile: './.eslintrc.json'
-  },
-  postcss: [autoprefixer()],
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-        compress: {
-            warnings: false
-        }
-    })
-  ]
+    },
+    resolve: {
+        extensions: ['', '.js', '.jsx', 'json']
+    },
+    eslint: {
+        configFile: './.eslintrc.json'
+    },
+    babel:{
+        presets:['react', 'es2015', 'stage-0']
+    },
+    postcss: [autoprefixer()],
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.NoErrorsPlugin()
+    ]
 };

@@ -5,6 +5,7 @@ var autoprefixer = require('autoprefixer');
 var gutil = require('gulp-util');
 var gulpSequence = require('gulp-sequence');
 var del = require('del');
+var imagemin = require('gulp-imagemin');
 var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync').create();
 var plumber = require('gulp-plumber');
@@ -43,11 +44,23 @@ gulp.task('webpack', function(cb) {
       cb()
   })
 });
-gulp.task('build', ['webpack', 'watch'], function() {
+
+gulp.task('image', function () {
+  gulp.src('./my.jpg')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('json', function(cb){
+    return gulp.src(['./cv.json'])
+        .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('build', ['clean', 'image', 'json', 'webpack', 'watch'], function() {
     return gulp.src('./src/index.html')
         .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['clean', 'build'], function() {
+gulp.task('default', ['build'], function() {
     browserSyncInit('./dist');
 });

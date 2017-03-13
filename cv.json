@@ -1,0 +1,54 @@
+{
+    "side":{
+        "baseinfo": {
+            "name": "高阳阳",
+            "avatar": "my.jpg",
+            "job": "前端/全栈工工程师",
+            "baseDescription": ["一个向着文艺进击的码农", "一腔热血", "处女座代码洁癖"]
+        },
+        "skillstacks": {
+            "html": "90",
+            "js": "80",
+            "css": "75",
+            "scss": "65",
+            "stylus": "65",
+            "angular": "60",
+            "vue": "60",
+            "react": "60",
+            "python": "60",
+            "shell": "50"
+        },
+
+        "social": [
+            { "type": "email", "url": "gyycoder@gmail.com" },
+            { "type": "website", "url": "http://gyyzyp.com" },
+            { "type": "github", "url": "https://github.com/gaoyangxiaozhu" }
+        ]
+    },
+    "content":{
+        "projects": [
+            {
+                "name": "DockerVI",
+                "url": "http://github.com/gaoyangxiaozhu/DockerVI",
+                "description": "实现docker swarm集群的可视化操作",
+                "technologies": ["nodeJs", "Angular", "Docker", "Scss"]
+            },
+            {
+                "name": "gz",
+                "description": "采用Vue1.0实现的异步hexo博客主题",
+                "technologies": ["vue", "vue-router", "webpack", "scss"]
+
+            }
+        ],
+        "works": [
+            {
+                "corporate": "留彼工坊",
+                "url": "https://www.livety.com",
+                "stime": "2014.12",
+                "endtime": "2015.9",
+                "description": "和后端工程师合作完成工作主站前端设计"
+            }
+        ]
+    }
+
+}
