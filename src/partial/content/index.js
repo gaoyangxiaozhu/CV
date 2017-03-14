@@ -1,15 +1,14 @@
 import React from 'react'
-import BaseInfo from '../baseinfo'
-import SkillStack from '../skillstack'
-import Social from '../social'
-
+import Projects from '../projects'
+import Works from '../works'
+import Educations from '../educations'
 
 import './index.scss'
 
 var sectionMapping = {
-    baseinfo: BaseInfo,
-    skillstacks: SkillStack,
-    social: Social
+    projects: Projects,
+    works: Works,
+    educations: Educations
 }
 export default class Side extends React.Component {
     constructor(props) {
@@ -17,8 +16,9 @@ export default class Side extends React.Component {
     }
     render() {
         const sections = Object.keys(this.props.data)
+        console.log(sections)
         return (
-            <div className="cv-side">
+            <div className="">
                 {
                     sections.map((name)=> {
                         let Section = sectionMapping[name]
