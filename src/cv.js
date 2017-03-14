@@ -37,9 +37,13 @@ class CV extends React.Component {
             content = (<Loading />)
             this.fetchData()
         }else {
-            content = (<Side data={this.state.data.side} /><Content data={this.state.data.content} />)
+            content =  (<Side data={this.state.data.side} />)(<Content data={this.state.data.content} />)
         }
-        return content
+        return (
+            <div>
+                { content }
+            </div>
+        )
     }
 
 }
