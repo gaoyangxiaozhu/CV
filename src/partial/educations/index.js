@@ -16,7 +16,7 @@ export default class Educations extends React.Component{
                         return (
                             <div key={school}>
                                 <h2> {school} </h2>
-                                <div>
+                                <div className="meta time">
                                     { `${syear}年${smonth}月`} 至 { `${eyear}年${emonth}月` }
                                 </div>
                                 <div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.scss'
 
 export default class Wall extends React.Component {
     constructor(props) {
@@ -9,9 +10,11 @@ export default class Wall extends React.Component {
         const data = this.props.data
         let content = data.map((val, index)=> <li key={index}> { val } </li>)
         return (
-            <ul className="">
-                { content }
-            </ul>
+            <div className="wall">
+                <ul>
+                    { content }
+                </ul>
+            </div>
         )
     }
 }

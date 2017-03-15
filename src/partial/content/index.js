@@ -16,9 +16,8 @@ export default class Side extends React.Component {
     }
     render() {
         const sections = Object.keys(this.props.data)
-        console.log(sections)
         return (
-            <div className="">
+            <div className="cv-main">
                 {
                     sections.map((name)=> {
                         let Section = sectionMapping[name]

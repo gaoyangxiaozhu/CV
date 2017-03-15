@@ -1,0 +1,39 @@
+@import "../../base.scss";
+
+.wall {
+    position: relative;
+    &:before{
+        content: '';
+
+        position: absolute;
+        top: 44%;
+        height: 7px;
+        width: 100%;
+
+        z-index: 0;
+        background-color: $defaultBorderColor;
+    }
+    ul{
+        @extend .f-cf;
+        position: relative;
+
+        background-color: transparent;
+
+        li{
+            float: left;
+            color: white;
+            background-color: $mainColor;
+            height: 32px;
+            line-height: 32px;
+            min-width: 80px;
+            padding: 0px 0.6rem;
+
+            text-align: center;
+
+            &:not(:first-child) {
+                margin-left: 1.5rem;
+            }
+        }
+    }
+
+}

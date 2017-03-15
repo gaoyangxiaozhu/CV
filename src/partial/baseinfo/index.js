@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.scss'
 
 export default class BaseInfo extends React.Component {
     constructor(props) {
@@ -6,26 +7,28 @@ export default class BaseInfo extends React.Component {
     }
     render() {
         const avatarURL = this.props.data.avatar
-        const username = this.props.data.username
+        const username = this.props.data.name
         const baseDescription = this.props.data.baseDescription
         const job = this.props.data.job
         return (
-            <div className="user-info">
+            <div className="m-user">
                 <div className="avatar">
                     <img src={avatarURL} className="img"/>
                 </div>
                 <div className="name">
                         { username }
                 </div>
-                <div className="base-desc">
-                    {
-                        baseDescription.map((description, index)=> {
-                            return (<p key={index} > {description} </p>)
-                        })
-                    }
-                </div>
-                <div className="job">
-                    <p> {job} </p>
+                <div className="desc">
+                    <div className="desc-base">
+                        {
+                            baseDescription.map((description, index)=> {
+                                return (<p key={index} > {description} </p>)
+                            })
+                        }
+                    </div>
+                    <div className="desc-job">
+                        <p> {job} </p>
+                    </div>
                 </div>
             </div>
         )

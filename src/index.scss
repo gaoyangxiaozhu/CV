@@ -1,0 +1,30 @@
+@import './base.scss';
+
+#cv{
+    position: relative;
+    overflow: auto;
+    background-color: $defaultBgcolor;
+
+}
+.cv-side,
+.cv-main{
+    float: left;
+    @extend .f-cf;
+
+    position: relative;
+    height: 100%;
+}
+
+.cv-side{
+    width: 33%;
+    padding: 4%;
+
+    background-color: $defaultBgColorForSide;
+    color: white;
+}
+
+.cv-main{
+    width: 67%;
+    padding: 2.5% 5% 2.5% 2.5%;
+    background-color: $defaultBgcolor;
+}

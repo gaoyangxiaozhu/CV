@@ -1,0 +1,47 @@
+@import '../../base.scss';
+.skills {
+    margin-top: 2rem;
+    .skill{
+        position: relative;
+        margin: 1rem 0;
+        height: 25px;
+
+        .skill-name,
+        .skill-bar {
+            float: left;
+            height: 100%;
+        }
+        .skill-name{
+            font-size: 2rem;
+            font-weight: bold;
+
+            width: 36%;
+        }
+        .skill-bar {
+            width: 64%;
+            height: 100%;
+
+            position: relative;
+            .skill-bar-bg{
+                width: 100%;
+                height: 100%;
+                border-radius:15px;
+                background-color: darken($defaultBgColorForSide, 10%);
+            }
+            .skill-bar-fg{
+                position: absolute;
+                background-color: white;
+                left:0;
+                top: 0;
+                border-top-left-radius:15px;
+                border-bottom-left-radius: 15px;
+                height: 100%;
+                width: 0%;
+
+                transition: all 0.4s ease-in-out;
+            }
+        }
+        @extend .f-cf;
+    }
+
+}

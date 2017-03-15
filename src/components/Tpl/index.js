@@ -1,12 +1,14 @@
 import React from 'react'
 import Wall from '../Wall/index'
+import './index.scss'
+
 export default class Tpl extends React.Component{
     constructor(props){
         super(props)
     }
     render() {
         const type = this.props.data.type.toLowerCase()
-        console.log(type)
+
         let name,
             url,
             description,
@@ -23,23 +25,26 @@ export default class Tpl extends React.Component{
 
         let timerContainer = null
         timerContainer = type === 'w' ? (
-            <div>
+            <div className="meta time">
                 { stime.trim().replace(/\./, '年')+'月'} 至 { etime.trim().replace(/\./, '年')+'月'}
             </div>
         ) : ('')
+
         return (
-            <div className="">
-                <div className="">
-                    <div>
-                        <a href={ url }> {name } </a>
+            <div className='tpl'>
+                <div className>
+                    <div className="name">
+                        <h1>
+                            <a href={ url }> {name || corporate } </a>
+                        </h1>
                     </div>
-                    <div>
+                    <div className="technologies">
                         <Wall data={ technologies }/>
                     </div>
                     {timerContainer}
                 </div>
                 <div className="">
-                    { description }
+                    <p>{ description }</p>
                 </div>
             </div>
         )

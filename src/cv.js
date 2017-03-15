@@ -9,6 +9,9 @@ import Content from './partial/content/index'
 
 import Util  from './lib/util'
 
+import 'font-awesome/css/font-awesome.css'
+import './index.scss'
+
 const loadJSON = Util.loadJSON
 const CVJSON='./cv.json'
 
@@ -20,7 +23,6 @@ class CV extends React.Component {
     fetchData() {
         loadJSON(CVJSON)
         .then((data) => {
-            console.log(data.data.content)
             this.setState({
                 loadingData: false,
                 data: data.data,
@@ -37,12 +39,15 @@ class CV extends React.Component {
             content = (<Loading />)
             this.fetchData()
         }else {
-            content =  (<Side data={this.state.data.side} />)(<Content data={this.state.data.content} />)
+            content =  (
+                <div id="root">
+                    <Side data={this.state.data.side} />
+                    <Content data={this.state.data.content} />
+                </div>
+                )
         }
         return (
-            <div>
-                { content }
-            </div>
+                content
         )
     }
 

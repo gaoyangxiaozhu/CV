@@ -1,0 +1,15 @@
+@import "../../base.scss";
+.tpl {
+    > div:first-child {
+        @extend  .f-cf;
+    }
+    .name {
+        float: left;
+    }
+    .technologies {
+        float: right;
+    }
+    .time{
+        clear: both;
+    }
+}

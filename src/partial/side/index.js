@@ -16,6 +16,7 @@ export default class Side extends React.Component {
         super(props)
     }
     render() {
+        console.log(this.props.data)
         const sections = Object.keys(this.props.data)
         return (
             <div className="cv-side">

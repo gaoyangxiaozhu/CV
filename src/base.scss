@@ -1,0 +1,73 @@
+// global scss
+$defaultFontColor: rgb(104, 120, 121);
+
+$mainColor: #22c3aa;
+
+$aColor: #22c3aa;
+$aHoverColor: darken(#22c3aa, 10%);
+
+$defaultBgcolor: white;
+$defaultBgColorForSide: #22c3aa;
+$defaultBgcolor: #F1EEE7;
+$defaultTitleColor: #22c3aa;
+
+$defaultBorderColor: #318C7F;
+
+html,
+body{
+    font-size: 10px;
+    font-family: Lato,"Microsoft YaHei",sans-serif;
+    color: $defaultFontColor;
+    margin: 0 10%;
+    height: 100%;
+}
+body{
+    font-size: 1.6rem;
+}
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2{
+    font-size: 3rem;
+    color: $defaultTitleColor;
+}
+
+ul,
+ol,
+li{
+    padding: 0px;
+    list-style: none;
+}
+
+p,
+span{
+    margin: 0.5rem 0;
+    font-size: 2rem;
+}
+a{
+    text-decoration: underline;
+    transition: 0.5s;
+    color: $aColor;
+    &:hover{
+        color: $aHoverColor;
+    }
+}
+i {
+    margin-right: 10px;
+}
+.meta{
+    font-size: 1.7rem;
+    &.time{
+        color: darken($mainColor, 20%);
+    }
+}
+.f-cf:after{
+    display: block;
+    content: '';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    zoom:1;
+}

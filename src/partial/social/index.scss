@@ -1,14 +1,39 @@
-.cv-social {
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  .social-item {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    a {
-        
+.social {
+    margin-top: 7rem;
+
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    ul{
+        position: relative;
+        padding: 0;
+        .social-item {
+          position: relative;
+          text-align: left;
+
+          height: 40px;
+          i {
+              position: relative;
+              height: 24px;
+              width: 24px;
+              text-align: center;
+              background-color: white;
+              border-radius: 12px;
+              color: #318C7F;
+              &:before{
+                  line-height: 24px;
+              }
+          }
+          a {
+              display: inline-block;
+              height: 100%;
+              line-height: 40px;
+              text-decoration: underline;
+              color: white;
+              font-weight: bolder;
+              font-size: 2rem;
+          }
+        }
     }
-  }
+
 }

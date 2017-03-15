@@ -3,7 +3,8 @@
         "baseinfo": {
             "name": "高阳阳",
             "avatar": "my.jpg",
-            "job": "前端/全栈工工程师",
+            "github": "https://github/gaoyangxiaozhu",
+            "job": "前端/全栈工程师",
             "baseDescription": ["一个向着文艺进击的码农", "一腔热血", "处女座代码洁癖"]
         },
         "skillstacks": {

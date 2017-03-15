@@ -1,0 +1,36 @@
+.m-user {
+    $borderColor: #aee2d9;
+    .avatar{
+        border-radius: 50%;
+        border: 10px solid $borderColor;
+        height: 180px;
+        width: 180px;
+        overflow: hidden;
+        margin:10px auto;
+
+        img{
+            border-radius: 50%;
+
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .name {
+        font-weight: bold;
+        font-size: 3.5rem;
+
+        text-align: center;
+    }
+    .desc {
+        border-top: 2px solid #318C7F;
+        border-bottom: 1px solid #318C7F;
+        color: #0b7d6d;
+        p {
+            text-align: center;
+        }
+        .desc-job{
+            font-weight: bold;
+            font-size: 3rem;
+        }
+    }
+}
