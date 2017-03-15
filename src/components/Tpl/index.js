@@ -41,8 +41,8 @@ export default class Tpl extends React.Component{
                     <div className="technologies">
                         <Wall data={ technologies }/>
                     </div>
-                    {timerContainer}
                 </div>
+                {timerContainer}
                 <div className="">
                     <p>{ description }</p>
                 </div>

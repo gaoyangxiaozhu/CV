@@ -2,12 +2,17 @@
 .tpl {
     > div:first-child {
         @extend  .f-cf;
-    }
-    .name {
-        float: left;
+        position: relative;
+        height: 64px;
+        .name{
+            line-height: 64px;
+        }
     }
     .technologies {
-        float: right;
+        position: absolute;
+        right: 0px;
+        top: 50%;
+        margin-top: -32px;
     }
     .time{
         clear: both;
