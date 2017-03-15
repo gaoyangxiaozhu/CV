@@ -29,8 +29,11 @@
             text-align: center;
         }
         .desc-job{
-            font-weight: bold;
-            font-size: 3rem;
+            p{
+                font-weight: bold;
+                font-size: 3rem;
+            }
+
         }
     }
 }

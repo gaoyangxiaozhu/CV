@@ -15,9 +15,6 @@ export default class Project extends React.Component{
                 {
                     projects.map((project, index)=> <Tpl data={ Object.assign(project, { type: 'p' })} key={ index }/>)
                 }
-                <div class="meta more">
-
-                </div>
             </div>
         )
     }

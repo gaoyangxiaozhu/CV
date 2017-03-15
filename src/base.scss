@@ -13,13 +13,23 @@ $defaultTitleColor: #22c3aa;
 
 $defaultBorderColor: #318C7F;
 
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
 html,
 body{
     font-size: 10px;
     font-family: Lato,"Microsoft YaHei",sans-serif;
     color: $defaultFontColor;
-    margin: 0 10%;
+
     height: 100%;
+    @media only screen and (min-width: $screen-md-min) {
+        margin: 10px 100px;
+    }
+    @media only screen and (min-width: $screen-lg-min){
+        margin: 0 5%;
+    }
 }
 body{
     font-size: 1.6rem;

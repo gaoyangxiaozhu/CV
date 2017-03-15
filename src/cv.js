@@ -40,7 +40,7 @@ class CV extends React.Component {
             this.fetchData()
         }else {
             content =  (
-                <div id="root">
+                <div id='root'>
                     <Side data={this.state.data.side} />
                     <Content data={this.state.data.content} />
                 </div>

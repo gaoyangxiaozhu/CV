@@ -1,10 +1,10 @@
 @import './base.scss';
 
 #cv{
-    position: relative;
-    overflow: auto;
     background-color: $defaultBgcolor;
-
+}
+#root {
+    @extend .f-cf;
 }
 .cv-side,
 .cv-main{
