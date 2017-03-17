@@ -38,6 +38,8 @@
 
     position: relative;
     height: 100%;
+
+    z-index: 2;
 }
 
 .cv-side{
@@ -51,7 +53,17 @@
         padding: 4%;
     }
 }
+.cv-side-bg {
+    @media only screen and (min-width: $screen-sm-min){
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 32%;
+        background-color: $defaultBgColorForSide;
 
+        z-index: 1;
+    }
+}
 .cv-main{
     width: 100%;
     padding: 6%;

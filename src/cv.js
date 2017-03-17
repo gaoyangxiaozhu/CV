@@ -23,14 +23,20 @@ class CV extends React.Component {
     fetchData() {
         loadJSON(CVJSON)
         .then((data) => {
-            this.setState({
-                loadingData: false,
-                data: data.data,
-                url: data.url
-            })
+            if(!data || (Object.prototype.toString.call(data) === '[object Object]' && !data.data.hasOwnProperty('side'))) {
+                return new Promise(function(resolve, reject) {
+                    reject(new Error('`cv.json` or `cv.en.json` maybe is not correct format for json file, please check it.'))
+                })
+            }else {
+                this.setState({
+                    loadingData: false,
+                    data: data.data,
+                    url: data.url
+                })
+            }
         })
         .catch(function(error) {
-            console.log(error.message)
+            console.error(error.message)
         })
     }
     changLang(lang, e) {
@@ -43,6 +49,14 @@ class CV extends React.Component {
         }
         e.preventDefault()
     }
+    componentDidMount() {
+    }
+    componentDidUpdate(preProps, preState) {
+        const rootNode =ReactDOM.findDOMNode(this)
+        if(rootNode && Object.prototype.toString.call(rootNode) == '[object HTMLDivElement]') {
+            //TODO
+        }
+    }
     render() {
         let content
         if(this.state.loadingData) {
@@ -52,6 +66,7 @@ class CV extends React.Component {
             content =  (
                 <div id="root">
                     <Side data={this.state.data.side} />
+                    <div className="cv-side-bg"></div>
                     <Content data={this.state.data.content} />
                     <div className="btn-group">
                         <a onClick={this.changLang.bind(this, 'cn')} className={ this.state.lang === 'cn' ? 'active' : '' }>中文</a>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './index.scss'
 
 export default class Educations extends React.Component{
     constructor(props){
@@ -6,22 +7,35 @@ export default class Educations extends React.Component{
     }
     render() {
         return (
-            <div>
+            <div className="educations">
+                <h1>教育背景</h1>
                 {
                     this.props.data.map((data, index)=> {
-                        let { school, stime, etime, major, degree, gpa } = data
+                        let { school, stime, etime, major, degree, gpa, ranking, walk, college } = data
                         let [ syear, smonth ] = stime.split('.')
                         let [ eyear, emonth ] = etime.split('.')
 
                         return (
                             <div key={school}>
                                 <h2> {school} </h2>
-                                <div className="meta time">
-                                    { `${syear}年${smonth}月`} 至 { `${eyear}年${emonth}月` }
-                                </div>
-                                <div>
-                                    <span>{degree}, {major}</span>
-                                    <span>GPA: {gpa}</span>
+                                <div className="education">
+                                    <div className="meta time">
+                                        { `${syear}年${smonth}月`} - { `${eyear}年${emonth}月` }
+                                    </div>
+                                    <div className="detail">
+                                        {
+                                            walk && <span className="walk strong">保送</span>
+                                        }
+                                        <span>{degree}</span>
+                                        <span>{major}</span>
+                                        <span>{college} </span>
+                                        {
+                                            gpa && !Number.isNaN(parseFloat(gpa)) && <span>GPA: {gpa}</span>
+                                        }
+                                        {
+                                            ranking && <span className="strong"> {ranking} </span>
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         )

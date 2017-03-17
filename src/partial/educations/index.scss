@@ -1,0 +1,28 @@
+@import '../../base.scss';
+
+.educations {
+    > h1 {
+        color:  #5f5353;
+        font-size: 4rem;
+    }
+    .education {
+        position: relative;
+        @extend  .f-cf;
+        .time,
+        .detail {
+            float: left;
+        }
+        .time {
+            margin-right: 10px;
+        }
+        .detail {
+            span {
+                display: inline-block;
+                &:not(:first-child) {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+}

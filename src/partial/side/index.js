@@ -26,6 +26,7 @@ export default class Side extends React.Component {
                     })
                 }
             </div>
+
         )
     }
 }

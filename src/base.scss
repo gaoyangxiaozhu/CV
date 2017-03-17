@@ -4,8 +4,8 @@ $defaultFontColor: rgb(104, 120, 121);
 $mainColor: #22c3aa;
 
 $aColor: #22c3aa;
-$aHoverColor: darken(#22c3aa, 15%);
-
+//$aHoverColor: darken(#22c3aa, 15%);
+$aHoverColor: #9f3;
 $defaultBgColorForSide: #22c3aa;
 $defaultBgcolor: #F1EEE7;
 $defaultTitleColor: #22c3aa;
@@ -25,10 +25,10 @@ body{
 
     height: 100%;
     @media only screen and (min-width: $screen-md-min) {
-        margin: 10px 30px;
+        margin: 0 30px;
     }
     @media only screen and (min-width: $screen-lg-min){
-        margin: 0 5%;
+        margin: 0 9%;
     }
 }
 body{
@@ -53,9 +53,11 @@ li{
     list-style: none;
 }
 
+li {
+    font-size: 1.8rem;
+}
 p,
 span{
-    margin: 0.5rem 0;
     font-size: 1.6rem;
     @media only screen and (min-width: $screen-md-min) {
         font-size: 1.8rem;
@@ -63,6 +65,9 @@ span{
     @media only screen and (min-width: $screen-lg-min) {
         font-size: 2rem;
     }
+}
+p {
+    margin: 0.5rem 0;
 }
 a{
     text-decoration: none;
@@ -76,7 +81,10 @@ a{
 i {
     margin-right: 6px;
 }
-
+.strong {
+    color: #a55e5e;
+    font-weight: bolder;
+}
 .meta{
     font-size: 1.7rem;
     &.time{

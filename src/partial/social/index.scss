@@ -30,8 +30,12 @@
                     line-height: 40px;
                 }
                 &:hover {
-                    color:#9f3;
+                    color:$aHoverColor;
 
+                }
+                @media only screen and (min-width: $screen-lg-min) {
+                    width: auto;
+                    margin-left: 10px;
                 }
             }
             a {
@@ -46,7 +50,7 @@
                     display: none;
                 }
                 &:hover {
-                    color: #9f3;
+                    color: $aHoverColor;
                 }
             }
 
