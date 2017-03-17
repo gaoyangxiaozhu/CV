@@ -1,3 +1,5 @@
+@import '../../base.scss';
+
 .social {
     margin-top: 7rem;
 
@@ -7,33 +9,69 @@
     ul{
         position: relative;
         padding: 0;
-        .social-item {
-          position: relative;
-          text-align: left;
+        @extend .f-cf;
 
-          height: 40px;
-          i {
-              position: relative;
-              height: 24px;
-              width: 24px;
-              text-align: center;
-              background-color: white;
-              border-radius: 12px;
-              color: #318C7F;
-              &:before{
-                  line-height: 24px;
-              }
-          }
-          a {
-              display: inline-block;
-              height: 100%;
-              line-height: 40px;
-              text-decoration: underline;
-              color: white;
-              font-weight: bolder;
-              font-size: 2rem;
-          }
+        .social-item {
+            position: relative;
+            text-align: center;
+            width: 33%;
+            float: left;
+            height: 40px;
+             i {
+                transition: 0.5s;
+                position: relative;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                background-color: white;
+                border-radius: 12px;
+                color: #318C7F;
+                &:before{
+                    line-height: 40px;
+                }
+                &:hover {
+                    color:#9f3;
+
+                }
+            }
+            a {
+                display: inline-block;
+                height: 100%;
+                line-height: 40px;
+                text-decoration: underline;
+                color: white;
+                font-weight: bolder;
+                font-size: 2rem;
+                span{
+                    display: none;
+                }
+                &:hover {
+                    color: #9f3;
+                }
+            }
+
         }
     }
-
+    @media only screen and (min-width: $screen-lg-min) {
+        ul {
+            .social-item {
+                float: none;
+                width: auto;
+                text-align: left;
+                margin-bottom: 7px;
+                i {
+                    color: white;
+                    background-color: transparent;
+                }
+                a {
+                    span {
+                        display: inline;
+                        position: absolute;
+                        top: 50%;
+                        margin-top: -20px;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -9,13 +9,19 @@ export default class BaseInfo extends React.Component {
 
     }
     componentDidMount() {
-        setTimeout(
+        this._timer = setTimeout(
             ()=> {
                 this._fgbars.forEach((fgbar)=> {
                     let [ fgBarDom, percent ] = fgbar
                     fgBarDom.style.width = `${percent}%`
                 })
             }, 0)
+    }
+    componentWillUnmount() {
+        this._fgbars = []
+        if(this._timer) {
+            clearTimeout(this._timer)
+        }
     }
     render() {
         const skills = this.props.data
@@ -27,7 +33,7 @@ export default class BaseInfo extends React.Component {
                         return (
                             <div className="skill" key={key}>
                                 <div className="skill-name">
-                                    { key.toUpperCase() }
+                                    { key }
                                 </div>
                                 <div className="skill-bar" data-percent={ skills[key] }>
                                     <div className="skill-bar-bg"></div>

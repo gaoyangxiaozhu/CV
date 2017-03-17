@@ -21,9 +21,10 @@ export default class Social extends React.Component {
                         social.map((item)=> {
                             return (
                                 <li className="social-item" key={ item.type }>
-                                    <i className={ iconMap[item.type]}></i>
+
                                     <a href={item.type === 'email' ? 'mailto:' + item.url : item.url } className={ item.type }>
-                                        {item.url.trim().replace(/(http|https):\/\//i,'')}
+                                        <i className={ iconMap[item.type]}></i>
+                                        <span> {item.url.trim().replace(/(http|https):\/\//i,'')} </span>
                                     </a>
                                 </li>
                             )

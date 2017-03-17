@@ -47,7 +47,7 @@ gulp.task('image', function () {
 });
 
 gulp.task('json', function(cb){
-    return gulp.src(['./cv.json'])
+    return gulp.src(['./cv.json', './cv.en.json'])
         .pipe(gulp.dest('./dist'));
 });
 

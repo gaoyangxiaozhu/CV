@@ -1,3 +1,5 @@
+@import '../../base.scss';
+
 .m-user {
     $borderColor: #aee2d9;
     .avatar{
@@ -18,12 +20,13 @@
     .name {
         font-weight: bold;
         font-size: 3.5rem;
-
+        text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
         text-align: center;
     }
     .desc {
         border-top: 2px solid #318C7F;
         border-bottom: 1px solid #318C7F;
+        margin-top: 10px;
         color: #0b7d6d;
         p {
             text-align: center;
@@ -31,7 +34,13 @@
         .desc-job{
             p{
                 font-weight: bold;
-                font-size: 3rem;
+                font-size: 2.5rem;
+                @media only screen and (min-width: $screen-md-min) {
+                    font-size: 2.7rem;
+                }
+                @media only screen and (min-width: $screen-lg-min) {
+                    font-size: 3rem;
+                }
             }
 
         }

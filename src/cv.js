@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 import Loading from './components/Loading'
 import Side from './partial/side/index'
@@ -13,12 +14,11 @@ import 'font-awesome/css/font-awesome.css'
 import './index.scss'
 
 const loadJSON = Util.loadJSON
-const CVJSON='./cv.json'
-
+let  CVJSON='./cv.json'
 class CV extends React.Component {
     constructor() {
         super()
-        this.state = { url: null, loadingData:true, data: {} }
+        this.state = { url: null, loadingData:true, data: {}, lang: 'cn' }
     }
     fetchData() {
         loadJSON(CVJSON)
@@ -33,6 +33,16 @@ class CV extends React.Component {
             console.log(error.message)
         })
     }
+    changLang(lang, e) {
+        const curLang = this.state.lang
+        if(curLang === lang) {
+            return
+        }else{
+            CVJSON = lang === 'cn' ? './cv.json' : './cv.en.json'
+            this.setState({lang: lang, loadingData: true})
+        }
+        e.preventDefault()
+    }
     render() {
         let content
         if(this.state.loadingData) {
@@ -40,15 +50,17 @@ class CV extends React.Component {
             this.fetchData()
         }else {
             content =  (
-                <div id='root'>
+                <div id="root">
                     <Side data={this.state.data.side} />
                     <Content data={this.state.data.content} />
+                    <div className="btn-group">
+                        <a onClick={this.changLang.bind(this, 'cn')} className={ this.state.lang === 'cn' ? 'active' : '' }>中文</a>
+                        <a onClick={this.changLang.bind(this, 'en')} className={ this.state.lang === 'en' ? 'active' : '' }>En</a>
+                    </div>
                 </div>
                 )
         }
-        return (
-                content
-        )
+        return content
     }
 
 }

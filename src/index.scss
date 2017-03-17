@@ -4,7 +4,32 @@
     background-color: $defaultBgcolor;
 }
 #root {
+    position: relative;
     @extend .f-cf;
+    transition: 0.5s;
+    opacity: 1;
+    > div.btn-group {
+        position: absolute;
+        right: 40px;
+        top: 10px;
+        a {
+            display: inline-block;
+            border-radius: 5px;
+            padding: 4px 8px;
+            text-decoration: none;
+            color: white;
+            &.active{
+                border: 1px solid white;
+            }
+            @media only screen and (min-width: $screen-sm-min) {
+                color: $aColor;
+                &.active {
+                    border: 1px solid $defaultBorderColor;
+                }
+            }
+        }
+    }
+    animation: fadein .7s;
 }
 .cv-side,
 .cv-main{
@@ -16,15 +41,53 @@
 }
 
 .cv-side{
-    width: 33%;
-    padding: 4%;
-
+    width: 100%;
+    padding: 6%;
     background-color: $defaultBgColorForSide;
     color: white;
+
+    @media only screen and (min-width: $screen-sm-min){
+        width: 32%;
+        padding: 4%;
+    }
 }
 
 .cv-main{
-    width: 67%;
-    padding: 2.5% 5% 2.5% 2.5%;
+    width: 100%;
+    padding: 6%;
     background-color: $defaultBgcolor;
+    @media only screen and (min-width: $screen-sm-min) {
+        width: 68%;
+        padding: 2.5% 5% 2.5% 2.5%;
+    }
+}
+
+//transition
+.cv-appear {
+  opacity: 0.01;
+}
+
+.cv-appear.cv-appear-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.cv-appear {
+  opacity: 0;
+}
+
+.cv-leave.cv-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+
+//animation
+@keyframes fadein {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
 }

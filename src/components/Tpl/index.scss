@@ -3,18 +3,34 @@
     > div:first-child {
         @extend  .f-cf;
         position: relative;
-        height: 64px;
+        h1 {
+            height: 50px;
+        }
         .name{
             line-height: 64px;
         }
     }
     .technologies {
-        position: absolute;
-        right: 0px;
-        top: 50%;
-        margin-top: -32px;
     }
     .time{
         clear: both;
+    }
+
+    @media only screen and (min-width: 882px) { // 882px is just for technologies wall and the value id between $screen-sm-min and $screen-md-min
+        > div:first-child {
+            height: 64px;
+            h1 {
+                height: 64px;
+            }
+        }
+        .technologies {
+            position: absolute;
+            right: 0px;
+            top: 50%;
+            margin-top: -16px;
+        }
+        .time{
+            clear: both;
+        }
     }
 }
