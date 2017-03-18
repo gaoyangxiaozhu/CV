@@ -49,13 +49,16 @@
 
     @media only screen and (min-width: $screen-sm-min){
         width: 29%;
-        padding: 4%;
+        padding: 25px;
 
         z-index: 2;
     }
+    @media only screen and (min-width: $screen-sm-min){
+        padding: 3%;
+    }
     @media only screen and (min-width: $screen-lg-min){
         width: 26%;
-        padding: 3% 33px;
+        padding: 3% 27px;
     }
 }
 .cv-side-bg {

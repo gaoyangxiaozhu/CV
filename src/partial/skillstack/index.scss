@@ -53,7 +53,7 @@
         }
         @extend .f-cf;
     }
-    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    @media only screen and (min-width: $screen-sm-min) and (max-width: $screen-lg-min) {
         .skill {
             .skill-name {
                 display: none;
@@ -63,7 +63,9 @@
                 .skill-bar-name-container {
                     display: block;
                     text-align: center;
-                    color: $defaultFontColor;
+                    color: $defaultTitleColor;
+
+                    font-weight: 700;
 
                     z-index: 2;
                 }

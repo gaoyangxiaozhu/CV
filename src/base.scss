@@ -71,6 +71,9 @@ p,
 span{
     font-size: 1.6rem;
     @media only screen and (min-width: $screen-md-min) {
+        font-size: 1.7rem;
+    }
+    @media only screen and (min-width: $screen-lg-min) {
         font-size: 1.8rem;
     }
 }
