@@ -25,11 +25,18 @@ body{
 
     height: 100%;
     @media only screen and (min-width: $screen-md-min) {
-        margin: 0 30px;
+        margin: 0 4%;
     }
-    @media only screen and (min-width: $screen-lg-min){
-        margin: 0 9%;
+    @media only screen and (min-width: 1484px ) {
+        margin: 0 7%;
     }
+    @media only screen and (min-width: 1604px) {
+        margin: 0 8%;
+    }
+    @media only screen and (min-width: 1900px) {
+        margin: 0 10%;
+    }
+
 }
 body{
     font-size: 1.6rem;
@@ -45,6 +52,10 @@ h2{
     color: $defaultTitleColor;
 }
 
+.section-title {
+    color: #5f5353;
+    font-size: 3.8rem;
+}
 ul,
 ol,
 li{
@@ -61,9 +72,6 @@ span{
     font-size: 1.6rem;
     @media only screen and (min-width: $screen-md-min) {
         font-size: 1.8rem;
-    }
-    @media only screen and (min-width: $screen-lg-min) {
-        font-size: 2rem;
     }
 }
 p {

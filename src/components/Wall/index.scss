@@ -2,6 +2,7 @@
 
 .wall {
     $screen-sm-min-wall: 547px;
+    // $screen-mid-mid-wall:
     position: relative;
     display: none;
     &:before{
@@ -9,11 +10,11 @@
 
         position: absolute;
         top: 44%;
-        height: 4px;
+        height: 0;
         width: 100%;
 
         z-index: 0;
-        background-color: $defaultBorderColor;
+        background-color: transparent;
     }
     ul{
         @extend .f-cf;
@@ -25,27 +26,35 @@
             float: left;
             color: white;
             background-color: $mainColor;
-            height: 32px;
-            line-height: 32px;
+            height: 30px;
+            line-height: 30px;
             padding: 0px 0.6rem;
 
             text-align: center;
 
-            &:not(:first-child) {
-                margin-left: 1.5rem;
+            &:not(:last-child) {
+                margin-right: 1.5rem;
             }
         }
     }
     @media only screen and (min-width: $screen-sm-min-wall) {
         display: inline-block;
-    }
-    @media only screen and (min-width: $screen-sm-min) {
-        &:before {
-            height: 5px;
-        }
         ul {
             li {
-                padding: 0px 0.6rem;
+                margin-top: 6px;
+            }
+        }
+    }
+    @media only screen and (min-width: $screen-md-min) {
+        &:before {
+            height: 5px;
+            background-color: $defaultBorderColor;
+        }
+    }
+    @media only screen and (min-width: $screen-lg-min) {
+        ul {
+            li {
+                margin-top: 0;
             }
         }
     }

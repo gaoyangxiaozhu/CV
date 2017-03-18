@@ -36,21 +36,26 @@
     float: left;
     @extend .f-cf;
 
+    width: 100%;
+    padding: 9%;
+
     position: relative;
     height: 100%;
 }
 
 .cv-side{
-    width: 100%;
-    padding: 6%;
     background-color: $defaultBgColorForSide;
     color: white;
 
     @media only screen and (min-width: $screen-sm-min){
-        width: 32%;
+        width: 29%;
         padding: 4%;
 
         z-index: 2;
+    }
+    @media only screen and (min-width: $screen-lg-min){
+        width: 26%;
+        padding: 3% 33px;
     }
 }
 .cv-side-bg {
@@ -58,19 +63,25 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        width: 32%;
+        width: 29%;
         background-color: $defaultBgColorForSide;
 
         z-index: 1;
     }
+    @media only screen and (min-width: $screen-lg-min){
+        width: 26%;
+    }
 }
 .cv-main{
-    width: 100%;
-    padding: 6%;
     background-color: $defaultBgcolor;
     @media only screen and (min-width: $screen-sm-min) {
         width: 68%;
         padding: 2.5% 5% 2.5% 2.5%;
+    }
+    @media only screen and (min-width: $screen-lg-min) {
+        width: 74%;
+        padding: 2.5% 6% 2.5% 4%;
+
     }
 }
 

@@ -3,34 +3,44 @@
     > div:first-child {
         @extend  .f-cf;
         position: relative;
-        h1 {
-            height: 50px;
-        }
-        .name{
-            line-height: 64px;
+
+        margin-bottom: 16px;
+        .name {
+            height: 36px;
         }
     }
     .technologies {
+        @extend .f-cf;
     }
     .time{
+        margin-top: -10px;
+        margin-bottom: 16px;
         clear: both;
     }
 
-    @media only screen and (min-width: $screen-lg-min) { // 882px before 
-        > div:first-child {
-            height: 64px;
-            h1 {
-                height: 64px;
-            }
-        }
-        .technologies {
-            position: absolute;
-            right: 0px;
-            top: 50%;
-            margin-top: -16px;
-        }
-        .time{
-            clear: both;
-        }
-    }
+    // @media only screen and (min-width: $screen-lg-min) { // 882px before
+    //     > div:first-child {
+    //         .name,
+    //         .technologies {
+    //             float: left;
+    //             height: 36px;
+    //             .wall {
+    //                 margin-top: 3px;
+    //             }
+    //         }
+    //         .name {
+    //             // height: 64px;
+    //             margin: 0;
+    //             margin-right: 10px;
+    //             a {
+    //                 display: inline-block;
+    //                 height: 36px;
+    //                 line-height: 36px;
+    //             }
+    //         }
+    //     }
+    //     .time{
+    //         clear: both;
+    //     }
+    // }
 }

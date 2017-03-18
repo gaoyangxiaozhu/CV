@@ -33,11 +33,9 @@ export default class Tpl extends React.Component{
         return (
             <div className='tpl'>
                 <div className>
-                    <div className="name">
-                        <h1>
-                            <a href={ url }> {name || corporate } </a>
-                        </h1>
-                    </div>
+                    <h1 className="name">
+                        <a href={ url }> {name || corporate } </a>
+                    </h1>
                     <div className="technologies">
                         <Wall data={ technologies }/>
                     </div>

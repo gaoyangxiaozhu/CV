@@ -11,12 +11,11 @@
             "html": "90",
             "js": "80",
             "css": "75",
-            "scss": "65",
-            "stylus": "65",
-            "angular": "60",
+            "Angular": "60",
             "vue": "60",
             "python": "60",
             "shell": "50",
+            "docker": "50",
             "react": "60"
         },
 

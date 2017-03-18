@@ -36,6 +36,9 @@ export default class BaseInfo extends React.Component {
                                     { key }
                                 </div>
                                 <div className="skill-bar" data-percent={ skills[key] }>
+                                    <div className="skill-bar-name-container">
+                                        { key }
+                                    </div>
                                     <div className="skill-bar-bg"></div>
                                     <div className="skill-bar-fg" ref={(fgbar)=> { this._fgbars.push([fgbar, skills[key]])}}></div>
                                 </div>

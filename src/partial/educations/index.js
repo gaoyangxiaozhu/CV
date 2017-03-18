@@ -8,7 +8,7 @@ export default class Educations extends React.Component{
     render() {
         return (
             <div className="educations">
-                <h1>教育背景</h1>
+                <h1 className="section-title">教育背景</h1>
                 {
                     this.props.data.map((data, index)=> {
                         let { school, stime, etime, major, degree, gpa, ranking, walk, college } = data
