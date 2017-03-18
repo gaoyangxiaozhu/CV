@@ -4,26 +4,25 @@
             "name": "Yangyang Gao",
             "avatar": "my.jpg",
             "github": "https://github/gaoyangxiaozhu",
-            "job": "前端/全栈工程师",
-            "baseDescription": ["一个向着文艺进击的码农", "一腔热血", "处女座代码洁癖"]
+            "job": "Front end Engineer",
+            "baseDescription": ["a literary and artistic programmer", "hot blood", "elegant coding habits", "open source enthusiasts"]
         },
         "skillstacks": {
             "html": "90",
-            "js": "80",
-            "css": "75",
-            "scss": "65",
-            "stylus": "65",
-            "angular": "60",
-            "vue": "60",
-            "react": "60",
-            "python": "60",
-            "shell": "50"
+            "js": "86",
+            "css": "80",
+            "Angular": "73",
+            "vue": "73",
+            "python": "65",
+            "docker": "65",
+            "shell": "65",
+            "react": "60"
         },
 
         "social": [
-            { "type": "email", "url": "gyycoder@gmail.com" },
-            { "type": "website", "url": "http://gyyzyp.com" },
-            { "type": "github", "url": "git@gaoyangxiaozhu" }
+            { "type": "email", "url": "gyycoder@gmail.com",  "alias": "gyycoder@gmail.com" },
+            { "type": "website", "url": "http://gyyzyp.com",  "alias": "gyyzyp.com" },
+            { "type": "github", "url": "https://github.com/gaoyangxiaozhu", "alias": "git@gaoyangxiaozhu"}
         ]
     },
     "content":{
@@ -31,35 +30,66 @@
             {
                 "name": "DockerVI",
                 "url": "http://github.com/gaoyangxiaozhu/DockerVI",
-                "description": "实现docker swarm集群的可视化操作",
-                "technologies": ["nodeJs", "Angular", "Docker", "Scss"]
+                "description": "DockerVI is inspired by the idea of realize the Visible Management for Docker Swarm by using Docker Swarm Remote API . The goal is to provide a beauty and power pure client side implementation, make it is effortless to connect and manage docker swarm.",
+                "technologies": ["NodeJs", "Angular", "Gulp", "Express", "WebSocket", "Docker Swarm"]
             },
             {
                 "name": "gz",
-                "description": "采用Vue1.0实现的异步hexo博客主题",
-                "technologies": ["vue", "vue-router", "webpack", "scss"]
-
+                "url": "http://gyyzyp.com",
+                "description": "An asynchronous Hexo theme using Vue 1.0 and  support Chinese, duoshuo comments plugin  and baidu statistics",
+                "technologies": ["vue", "vue-router", "webpack", "Gulp", "Scss"]
             }
         ],
         "works": [
             {
-                "corporate": "留彼工坊",
+                "corporate": "Livety",
                 "url": "https://www.livety.com",
+                "post": "Front end Engineer",
                 "stime": "2014.12",
                 "etime": "2015.9",
-                "description": "和后端工程师合作完成工作主站前端设计",
-                "technologies": ["vue", "vue-router", "webpack", "scss"]
+                "description": "Cooperate with the designer to complete the design of the main body of the foreign student platform independently, and cooperate with the backend engineer to improve the overall business and the interactive logic of the foreign student platform",
+                "technologies": ["Coffect", "Gulp", "Stylus", "Python"]
+            },
+            {
+                "corporate": "PingCAP",
+                "url": "https://www.pingcap.com",
+                "post": "Full Stack Developer",
+                "stime": "2017.3",
+                "etime": "2017-5",
+                "description": "Members of the SRE group, mainly involved in the construction of the company's website as well as the construction of the open source database TiDB peripheral tool, has completed the automated construction of the website of pingCAP",
+                "technologies": ["Js", "Gulp", "Webpack", "Python", "Shell"]
             }
         ],
         "educations": [
             {
-                "school": "南京邮电大学",
+                "school": "Beijing University of Posts and Telecommunications",
+                "stime": "2015.9",
+                "etime": "2018.3",
+                "college": "school of computing",
+                "major": "computer science and technology",
+                "degree": "graduate student",
+                "gpa": "",
+                "ranking": "",
+                "walk": true
+            },
+            {
+                "school": "Nanjing University of Posts and Telecommunications",
                 "stime": "2011.9",
                 "etime": "2015.6",
-                "major": "软件工程",
-                "degree": "本科生",
-                "gpa": "4.01"
+                "college": "school of computing",
+                "major": "software engineering",
+                "degree": "Undergraduate",
+                "gpa": "4.10/5.00",
+                "ranking": "Top 2",
+                "walk": false
             }
+        ],
+        "awards": [
+            "National Endeavor Fellowship",
+            "Model of Triple-A student of Nanjing University of Posts and Telecommunications",
+            "Excellent graduate student of Beijing University of Posts and Telecommunications",
+            "First class scholarship of Nanjing University of Posts and Telecommunications",
+            "First class scholarship for graduate students of Beijing University of Posts and Telecommunications"
         ]
     }
 

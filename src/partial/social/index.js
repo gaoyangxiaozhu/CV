@@ -24,7 +24,7 @@ export default class Social extends React.Component {
 
                                     <a href={item.type === 'email' ? 'mailto:' + item.url : item.url } className={ item.type }>
                                         <i className={ iconMap[item.type]}></i>
-                                        <span> {item.url.trim().replace(/(http|https):\/\//i,'')} </span>
+                                        <span> {item.alias || item.url.trim().replace(/(http|https):\/\//i,'')} </span>
                                     </a>
                                 </li>
                             )

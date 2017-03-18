@@ -31,7 +31,7 @@ export default class Educations extends React.Component{
                                         <span>{major}</span>
                                         <span>{college} </span>
                                         {
-                                            gpa && !Number.isNaN(parseFloat(gpa)) && <span>GPA: {gpa}</span>
+                                            gpa && !Number.isNaN(parseFloat(gpa)) && <span className="strong"> GPA: {gpa}</span>
                                         }
                                         {
                                             ranking && <span className="strong"> {ranking} </span>

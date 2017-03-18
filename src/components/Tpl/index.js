@@ -15,14 +15,15 @@ export default class Tpl extends React.Component{
             technologies,
             corporate,
             stime,
-            etime
+            etime,
+            post
 
         if(type === 'p'){
             ({ name, url, description, technologies } = this.props.data)
         }else{
-            ({ corporate, url, stime, etime, description, technologies } = this.props.data)
+            ({ corporate, url, stime, etime, description, technologies, post } = this.props.data)
         }
-
+        console.log(post)
         let timerContainer = null
         timerContainer = type === 'w' ? (
             <div className="meta time">

@@ -5,24 +5,24 @@
             "avatar": "my.jpg",
             "github": "https://github/gaoyangxiaozhu",
             "job": "前端/全栈工程师",
-            "baseDescription": ["一个向着文艺进击的码农", "一腔热血", "处女座代码洁癖", "开源爱好者"]
+            "baseDescription": ["文艺型码农", "一腔热血", "处女座代码洁癖", "开源爱好者"]
         },
         "skillstacks": {
             "html": "90",
-            "js": "80",
-            "css": "75",
-            "Angular": "60",
-            "vue": "60",
-            "python": "60",
-            "shell": "50",
-            "docker": "50",
+            "js": "86",
+            "css": "80",
+            "Angular": "73",
+            "vue": "73",
+            "python": "65",
+            "docker": "65",
+            "shell": "65",
             "react": "60"
         },
 
         "social": [
-            { "type": "email", "url": "gyycoder@gmail.com" },
-            { "type": "website", "url": "http://gyyzyp.com" },
-            { "type": "github", "url": "git@gaoyangxiaozhu" }
+            { "type": "email", "url": "gyycoder@gmail.com",  "alias": "gyycoder@gmail.com" },
+            { "type": "website", "url": "http://gyyzyp.com",  "alias": "gyyzyp.com" },
+            { "type": "github", "url": "https://github.com/gaoyangxiaozhu", "alias": "git@gaoyangxiaozhu"}
         ]
     },
     "content":{
@@ -30,14 +30,14 @@
             {
                 "name": "DockerVI",
                 "url": "http://github.com/gaoyangxiaozhu/DockerVI",
-                "description": "一款基于Docker Swarm remote API 实现的Docker Swarm集群的可视化管理, 主要功能包括集群资源的监控, 镜像的删除,搜索,下载,显示;容器列表显示,容器实例的创建,删除,运行,停止;容器资源的实时监控,日志查看;数据卷的创建,删除等",
-                "technologies": ["NodeJs", "Angular", "Gulp", "Express", "Docker Swarm"]
+                "description": "一款基于Docker Swarm remote API 实现的Docker Swarm集群的可视化管理解决方案, 主要功能包括集群资源的监控; 镜像的搜索,下载, 删除; 容器列表显示; 容器实例创建,删除,运行,停止; 容器资源实时监控以及日志查看; 数据卷的创建,删除等",
+                "technologies": ["NodeJs", "Angular", "Gulp", "Express", "WebSocket", "Docker Swarm"]
             },
             {
                 "name": "gz",
                 "url": "http://gyyzyp.com",
-                "description": "采用Vue1.0实现的异步hexo博客主题, 通过yml进行博客信息配置,支持多说评论以及百度统计",
-                "technologies": ["vue", "vue-router", "webpack", "Gulp"]
+                "description": "采用Vue1.0实现的异步hexo博客主题, 动态的异步加载效果, 简洁文艺的界面风格, 支持多说评论以及百度统计",
+                "technologies": ["vue", "vue-router", "webpack", "Gulp", "Scss"]
             }
         ],
         "works": [
@@ -47,7 +47,7 @@
                 "post": "前端工程师",
                 "stime": "2014.12",
                 "etime": "2015.9",
-                "description": "基于设计稿独立完成公司留学生平台的主体整体样式设计,配合后端工程师完善公司留学生平台整体的业务逻辑",
+                "description": "配合设计师独立完成公司留学生平台的主体样式设计; 配合后端工程师完善公司留学生平台整体的业务逻辑以及交互逻辑",
                 "technologies": ["Coffect", "Gulp", "Stylus", "Python"]
             },
             {
@@ -56,7 +56,7 @@
                 "post": "全栈工程师",
                 "stime": "2017.3",
                 "etime": "2017-5",
-                "description": "SRE组成员,参与构建公司主站以及TiDB周边工具建设,目前已辅助前端工程师完成主站2.0版本的自动化构建以及上线工作",
+                "description": "SRE组成员,主要参与构建公司主站以及开源数据库TiDB周边工具建设,目前已辅助前端工程师完成主站2.0版本的自动化构建以及上线工作",
                 "technologies": ["Js", "Gulp", "Webpack", "Python", "Shell"]
             }
         ],
@@ -79,7 +79,7 @@
                 "college": "软件学院",
                 "major": "软件工程",
                 "degree": "本科生",
-                "gpa": "4.01/5.0",
+                "gpa": "4.10/5.00",
                 "ranking": "专业第二",
                 "walk": false
             }
