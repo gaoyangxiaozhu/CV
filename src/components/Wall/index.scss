@@ -45,13 +45,11 @@
             }
         }
     }
-    @media only screen and (min-width: $screen-md-min) {
+    @media only screen and (min-width: $screen-lg-min) {
         &:before {
             height: 5px;
             background-color: $defaultBorderColor;
         }
-    }
-    @media only screen and (min-width: $screen-lg-min) {
         ul {
             li {
                 margin-top: 0;
