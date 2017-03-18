@@ -55,7 +55,7 @@
                 "url": "https://www.pingcap.com",
                 "post": "全栈工程师",
                 "stime": "2017.3",
-                "etime": "现在",
+                "etime": "2017-5",
                 "description": "SRE组成员,参与构建公司主站以及TiDB周边工具建设,目前已辅助前端工程师完成主站2.0版本的自动化构建以及上线工作",
                 "technologies": ["Js", "Gulp", "Webpack", "Python", "Shell"]
             }

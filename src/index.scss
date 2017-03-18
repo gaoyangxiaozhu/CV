@@ -25,6 +25,7 @@
                 color: $aColor;
                 &.active {
                     border: 1px solid $defaultBorderColor;
+                    background-color: #fafaff;
                 }
             }
         }

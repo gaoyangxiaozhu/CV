@@ -15,6 +15,7 @@ import './index.scss'
 
 const loadJSON = Util.loadJSON
 let  CVJSON='./cv.json'
+
 class CV extends React.Component {
     constructor() {
         super()
@@ -65,9 +66,9 @@ class CV extends React.Component {
         }else {
             content =  (
                 <div id="root">
-                    <Side data={this.state.data.side} />
+                    <Side data={this.state.data.side} lang={this.state.lang } />
                     <div className="cv-side-bg"></div>
-                    <Content data={this.state.data.content} />
+                    <Content data={this.state.data.content}  lang={this.state.lang }/>
                     <div className="btn-group">
                         <a onClick={this.changLang.bind(this, 'cn')} className={ this.state.lang === 'cn' ? 'active' : '' }>中文</a>
                         <a onClick={this.changLang.bind(this, 'en')} className={ this.state.lang === 'en' ? 'active' : '' }>En</a>
