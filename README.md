@@ -4,7 +4,7 @@
 
 ---
 
-# An online responsive CV of Yangyang Gao using React [Demo][1]
+## An online responsive CV of Yangyang Gao using React [Demo][1]
 
 ### Introduction
 
