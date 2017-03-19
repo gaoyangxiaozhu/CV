@@ -7,9 +7,10 @@ export default class Awards extends React.Component{
     }
     render() {
         let listItem = this.props.data.map((item, index)=> <li key={index}> {item} </li>)
+        const sectionTitle = this.props.title || '获奖经历'
         return (
             <div className="awards">
-                <h1>获奖经历</h1>
+                <h1 className="section-title"> { sectionTitle } </h1>
                 <div className="award">
                     <ul>
                         { listItem }

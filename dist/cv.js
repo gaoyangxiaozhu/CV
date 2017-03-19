@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "699fa57e644d81670b1e"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1c04ba7b6be892e45f36"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -26455,13 +26455,16 @@
 	                    ' '
 	                );
 	            });
+	            var sectionTitle = this.props.title || '获奖经历';
 	            return _react2.default.createElement(
 	                'div',
 	                { className: 'awards' },
 	                _react2.default.createElement(
 	                    'h1',
-	                    null,
-	                    '\u83B7\u5956\u7ECF\u5386'
+	                    { className: 'section-title' },
+	                    ' ',
+	                    sectionTitle,
+	                    ' '
 	                ),
 	                _react2.default.createElement(
 	                    'div',
