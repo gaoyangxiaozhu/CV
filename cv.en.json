@@ -47,7 +47,7 @@
                 "post": "Front end Engineer",
                 "stime": "2014.12",
                 "etime": "2015.9",
-                "description": "Cooperate with the designer to complete the design of the main body of the foreign student platform independently, and cooperate with the backend engineer to improve the overall business and the interactive logic of the foreign student platform",
+                "description": "Cooperate with the designer to complete the design of the main body of the foreign student platform independently, and cooperate with the backend engineer to improve the overall business and the interactive logic of the foreign student platform.",
                 "technologies": ["Coffect", "Gulp", "Stylus", "Python"]
             },
             {
@@ -56,7 +56,7 @@
                 "post": "Full Stack Developer",
                 "stime": "2017.3",
                 "etime": "2017-5",
-                "description": "Members of the SRE group, mainly involved in the construction of the company's website as well as the construction of the open source database TiDB peripheral tool, has completed the automated construction of the website of pingCAP",
+                "description": "Members of the SRE group, mainly involved in the construction of the company's website as well as the construction of the open source database TiDB peripheral tool, has completed the automated construction of the website of pingCAP.",
                 "technologies": ["Js", "Gulp", "Webpack", "Python", "Shell"]
             }
         ],
@@ -70,7 +70,7 @@
                 "degree": "graduate student",
                 "gpa": "",
                 "ranking": "",
-                "walk": true
+                "walk": false
             },
             {
                 "school": "Nanjing University of Posts and Telecommunications",
@@ -80,16 +80,16 @@
                 "major": "software engineering",
                 "degree": "Undergraduate",
                 "gpa": "4.10/5.00",
-                "ranking": "Top 2",
+                "ranking": "TOP 1%",
                 "walk": false
             }
         ],
         "awards": [
             "National Endeavor Fellowship",
-            "Model of Triple-A student of Nanjing University of Posts and Telecommunications",
-            "Excellent graduate student of Beijing University of Posts and Telecommunications",
-            "First class scholarship of Nanjing University of Posts and Telecommunications",
-            "First class scholarship for graduate students of Beijing University of Posts and Telecommunications"
+            "Model of Triple-A student",
+            "Excellent graduate student",
+            "First class scholarship",
+            "First class scholarship for graduate students"
         ]
     }
 

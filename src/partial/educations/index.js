@@ -25,6 +25,7 @@ export default class Educations extends React.Component{
                                     </div>
                                     <div className="detail">
                                         {
+                                            // only chinese cv set `walk` is true
                                             walk && <span className="walk strong">保送</span>
                                         }
                                         <span>{degree}</span>

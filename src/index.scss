@@ -10,8 +10,8 @@
     opacity: 1;
     > div.btn-group {
         position: absolute;
-        right: 40px;
-        top: 10px;
+        right: 8px;
+        top: 8px;
         a {
             display: inline-block;
             border-radius: 5px;
@@ -28,6 +28,10 @@
                     background-color: #fafaff;
                 }
             }
+        }
+        @media only screen and (min-width: $screen-sm-min) {
+            top: 10px;
+            right: 40px;
         }
     }
     animation: fadein .7s;

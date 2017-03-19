@@ -18,9 +18,12 @@
     }
     .name {
         font-weight: bold;
-        font-size: 3.5rem;
+        font-size: 2.7rem;
         text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
         text-align: center;
+        @media only screen and (min-width: $screen-md-min) {
+            font-size: 3.5rem;
+        }
     }
     .desc {
         border-top: 2px solid #318C7F;
@@ -33,7 +36,10 @@
         .desc-job{
             p{
                 font-weight: bold;
-                font-size: 2.5rem;
+                font-size: 2rem;
+                @media only screen and (min-width: $screen-md-min) {
+                    font-size: 2.5rem;
+                }
                 @media only screen and (min-width: $screen-lg-min) {
                     font-size: 2.8rem;
                 }

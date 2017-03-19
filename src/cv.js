@@ -71,7 +71,7 @@ class CV extends React.Component {
                     <Content data={this.state.data.content}  lang={this.state.lang }/>
                     <div className="btn-group">
                         <a onClick={this.changLang.bind(this, 'cn')} className={ this.state.lang === 'cn' ? 'active' : '' }>中文</a>
-                        <a onClick={this.changLang.bind(this, 'en')} className={ this.state.lang === 'en' ? 'active' : '' }>En</a>
+                        <a onClick={this.changLang.bind(this, 'en')} className={ this.state.lang === 'en' ? 'active' : '' }>English</a>
                     </div>
                 </div>
                 )
